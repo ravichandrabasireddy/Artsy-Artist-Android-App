@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    tools:context=".SearchResultActivity">
+
+  <ProgressBar
+      android:id="@+id/progress_bar_loading"
+      style="?android:attr/progressBarStyleLarge"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:indeterminateTint="@color/blue_primary"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+      android:id="@+id/item_loading"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="177dp"
+      android:layout_marginTop="4dp"
+      android:layout_marginEnd="176dp"
+      android:layout_marginBottom="304dp"
+      android:text="@string/loading"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/progress_bar_loading" />
+
+
+
+  <FrameLayout
+      android:id="@+id/searchFrameLayout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      app:layout_constraintBottom_toTopOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:context=".SearchResultActivity">
+    <TextView
+        android:id="@+id/item_no_search_results"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/no_results_found"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginBottom="60dp"
+        android:textAppearance="?attr/textAppearanceCaption"
+        android:visibility="invisible"
+        android:backgroundTint="@color/dark_grey"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        app:layoutManager="LinearLayoutManager" />
+  </FrameLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

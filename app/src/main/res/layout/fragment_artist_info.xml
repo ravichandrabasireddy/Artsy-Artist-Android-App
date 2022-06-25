@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ArtistInfoFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/artistNameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="32dp"
+                android:layout_marginVertical="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/artistNameHeading"
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/name"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:textColor="@color/light_black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/artistNameContainer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="4dp"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textColor="@color/light_dark_black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/artistNationalityLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="32dp"
+                android:layout_marginVertical="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/artistNationalityHeading"
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/nationality"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:textColor="@color/light_black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/artistNationalityContainer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="4dp"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textColor="@color/light_dark_black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/artistBirthYearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="32dp"
+                android:layout_marginVertical="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/artistBirthYearHeading"
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/birthday"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:textColor="@color/light_black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/artistBirthYearContainer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="4dp"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textColor="@color/light_dark_black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/artistDeathYearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="32dp"
+                android:layout_marginVertical="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/artistDeathYearHeading"
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/deathDay"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:textColor="@color/light_black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/artistDeathYearContainer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="4dp"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textColor="@color/light_dark_black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/artistBiographyLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="32dp"
+                android:layout_marginVertical="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/artistBiographyHeading"
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/biography"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:textColor="@color/light_black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/artistBiographyContainer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="4dp"
+                    android:textAlignment="viewStart"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textColor="@color/light_dark_black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>
